@@ -213,18 +213,23 @@ input[type="email"]:active
     margin-bottom: 100px;
 }
 
+
+
 .items-content
 {
     margin-top: 80px;
     margin-left: 100px;
     margin-bottom:30px;
 }
+
 .items-image
 {
     margin-top: 80px;
     margin-bottom:30px;
 
 }
+
+
 
 .items-content h2
 {
@@ -256,4 +261,161 @@ input[type="email"]:active
     width: 100%;
     border: 3px solid darkgray;
     
+}
+
+.feature-1
+{
+    opacity: 0;
+    animation: fade-in 2s ease-in-out infinite;
+}
+
+@keyframes fade-in
+{
+    0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+}
+
+.feature-2
+{
+    transform: scale(0);
+    animation: scale-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes scale-animation
+{
+    0%
+    {
+        transform: scale(0);
+    }
+
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+.feature-3 {
+    transform: translateX(-8%);
+    animation: third-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes third-animation
+{
+    0%
+    {
+        transform: translateX(-8%);
+    }
+
+    100%
+    {
+        transform: translateX(8%);
+    }
+}
+
+.feature-4
+{
+    height: 400px;
+    transform: rotate(-60deg);
+    animation: rotation 2s ease-in-out infinite alternate;
+}
+
+@keyframes rotation
+{
+    0%
+    {
+        transform: rotate(-60deg);
+    }
+
+    100%
+    {
+        transform: rotate(60deg);
+    }
+}
+
+.faq
+{
+    color: #ffffff;
+    padding: 50px 12%;
+    height: 100%;
+    background-color: #000000;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2
+{
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.faq-main
+{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.faq-main li 
+{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.faq-main li label
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-main li label::after
+{
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    transition: transform 0.5s;
+
+}
+
+input[type='radio']
+{
+    display: none;
+}
+
+.faq-main .content
+{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+
+.faq-main input[type='radio']:checked + label + .content
+{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.faq-main input[type='radio']:checked + label::after
+{
+    transform: rotate(135deg);
 }
