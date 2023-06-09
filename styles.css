@@ -6,7 +6,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+
+
 
 
 header
@@ -351,8 +354,9 @@ input[type="email"]:active
 
 .faq h2
 {
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 45px;
     color: #ffffff;
 }
 
@@ -389,7 +393,7 @@ input[type="email"]:active
     position: absolute;
     right: 20px;
     font-size: 30px;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 
 }
 
@@ -419,3 +423,66 @@ input[type='radio']
 {
     transform: rotate(135deg);
 }
+
+.faq-main label:hover
+{
+    background-color: #525252;
+    transition: all 0.5s ;
+}
+
+.faq-bottom
+{
+    margin-top: -230px;
+    color: #ffffff;
+    padding: 1px 12%;
+    height: 100%;
+    background-color: #000000;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer
+{
+    color: #E8E8E8;
+    padding: 50px 12%;
+    height: 100%;
+    background-color: #000000;
+    font-size: 18px;
+    
+}
+
+.footer-container
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family:'Poppins',sans-serif;
+    font-size: 16px;
+}
+
+footer p
+{
+    margin-left: 10px;
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.column
+{
+    margin-top: 20px;
+    flex: 1;
+    margin-right: 2px;
+    
+}
+
+.row
+{
+    margin-bottom: 10px;   
+}
+
+.row a{
+    color:#CCCCCC;
+}
+
