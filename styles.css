@@ -495,8 +495,13 @@ footer p
     }
 
     header {
-      height: 150vh;
+      height: 80vh;
       background-position: top;
+    }
+
+    .contianer-presentation
+    {
+        /* margin-top: -750px; */
     }
     
     .logo {
