@@ -356,7 +356,7 @@ input[type="email"]:active
 .faq
 {
     color: #ffffff;
-    padding: 50px 12%;
+    padding: 100px 12%;
     height: 100%;
     background-color: #000000;
     text-align: center;
@@ -408,31 +408,24 @@ input[type="email"]:active
 
 }
 
-input[type='radio']
+input[type="radio"]
 {
     display: none;
 }
 
-.faq-main .content
+.faq-main .content 
 {
     background: #303030;
     text-align: left;
     padding: 0 20px;
     max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
+    overflow:hidden;
 }
 
-
-.faq-main input[type='radio']:checked + label + .content
+.faq-main input[type="radio"]:checked + label + .content
 {
-    max-height: 600px;
+    max-height:600px;
     padding: 30px 20px;
-}
-
-.faq-main input[type='radio']:checked + label::after
-{
-    transform: rotate(135deg);
 }
 
 .faq-main label:hover
@@ -441,16 +434,12 @@ input[type='radio']
     transition: all 0.5s ;
 }
 
-.faq-bottom
+.second-p.second
 {
-    margin-top: -230px;
-    color: #ffffff;
-    padding: 1px 12%;
-    height: 100%;
-    background-color: #000000;
-    text-align: center;
-    font-size: 18px;
+    margin-top: -40px;
+    margin-bottom: 20px;
 }
+
 
 footer
 {
@@ -506,7 +495,7 @@ footer p
     }
 
     header {
-      height: 170vh;
+      height: 230vh;
       background-position: top;
     }
     
@@ -560,7 +549,7 @@ footer p
     }
     
     #myemail {
-      width: 70%;
+      width: 80%;
       margin-left: 0;
       margin-bottom: 10px;
       padding: 10px;
@@ -619,11 +608,343 @@ footer p
     {
         padding: 20px;
     }
+
+    .second-p.second {
+        font-size: 15px;
+        margin-top: 50px;
+        padding: 13px;
+      }
+
+ .faq
+{
+    padding: 50px 12%;
+    font-size: 10px;
+    padding-bottom: 520px;
+    margin-bottom: -380px;
+}
+
+.faq h2
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.faq-main
+{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.faq-main li 
+{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.faq-main li label
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-main li label::after
+{
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    transition: transform 0.3s;
+
+}
+
+input[type='radio']
+{
+    display: none;
+}
+
+.faq-main .content
+{
+    font-size: 15px;
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+
+.faq-main input[type='radio']:checked + label + .content
+{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.faq-main input[type='radio']:checked + label::after
+{
+    transform: rotate(135deg);
+}
+
+.faq-main label:hover
+{
+    background-color: #525252;
+    transition: all 0.5s ;
+}
+
+.get-started {
+    width: 60%;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: none;
+  }
+    
+  .footer-container
+  {
+    display: flex;
+    flex-direction: column;
   }
 
-  /*-----------------------------------*/
+  .column
+  {
+    margin-top:5px;
+  }
+
+  }
+
+  /*-----------------------------------------------------------*/
+
+
+  /* Styles for screens between 400px and 922px */
+@media only screen and (min-width: 401px) and (max-width: 922px) {
+    header {
+      height: 190vh; 
+    }
+  
+    .logo {
+      width: 120px; 
+      margin-left: 5px;
+      margin-top: 10px;
+    }
+  
+    .mybtn {
+      margin-right: 10px;
+      display: flex;
+    }
+  
+    .eng {
+      max-width: 200px; 
+      margin-right: 10px;
+    }
+  
+    .sign {
+      width: 90%; 
+      max-width: 80px;
+      margin-top: 0px; 
+      margin-left: -1px;     
+    }
+  
+    .header-content {
+      margin-top: 20px; 
+    }
+  
+    .header-content h1 {
+      font-size: 32px; 
+      text-align: center;
+      padding: 60px; 
+    }
+  
+    .first-p {
+      font-size: 18px; 
+      margin-top: -30px;
+    }
+  
+    .second-p {
+      font-size: 15px; 
+      margin-top: -20px; 
+      padding: 50px;
+      margin-bottom: -20px;
+    }
+  
+    .header-bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #myemail {
+    max-width: 300px;
+      width: 100%; 
+      margin-left: 0;
+      margin-bottom: 10px; 
+      padding: 8px; 
+      font-size: 12px;
+    }
+  
+    .get-started {
+        max-width: 150px;
+      width: 100%; /* Adjust the width as per your requirement */
+      margin: 0;
+      margin-bottom: 15px; /* Adjust the margin as per your requirement */
+      font-size: 16px; /* Adjust the font size as per your requirement */
+      border: none;
+    }
+  
+    .items {
+      flex-direction: column;
+    }
+  
+    .items-content,
+    .items-image {
+      margin: 10px; /* Adjust the margin as per your requirement */
+      text-align: center;
+    }
+  
+    .items-content h2 {
+      font-size: 24px; /* Adjust the font size as per your requirement */
+    }
+  
+    .items-content p {
+      width: 100%;
+      font-size: 12px; /* Adjust the font size as per your requirement */
+    }
+  
+    .feature-2 {
+      width: 25%; /* Adjust the width as per your requirement */
+      margin-top: -50px; /* Adjust the margin as per your requirement */
+    }
+  
+    .feature-4 {
+      width: 80%; /* Adjust the width as per your requirement */
+      height: 35%; /* Adjust the height as per your requirement */
+      margin-top: -30px; /* Adjust the margin as per your requirement */
+    }
+  
+    .items-content.two {
+      margin-top: 20px; /* Adjust the margin as per your requirement */
+      padding: 5px; /* Adjust the padding as per your requirement */
+      margin-bottom: 30px; /* Adjust the margin as per your requirement */
+    }
+  
+    .items.one,
+    .items.three,
+    .items.four,
+    .items.two {
+      padding: 15px; /* Adjust the padding as per your requirement */
+    }
+  
+    .second-p.second {
+      font-size: 13px; /* Adjust the font size as per your requirement */
+      margin-top: 30px; /* Adjust the margin as per your requirement */
+      padding: 10px; /* Adjust the padding as per your requirement */
+    }
+  
+    .faq {
+      padding: 30px 8%; /* Adjust the padding as per your requirement */
+      font-size: 9px; /* Adjust the font size as per your requirement */
+      padding-bottom: 390px; /* Adjust the padding as per your requirement */
+      margin-bottom: -280px; /* Adjust the margin as per your requirement */
+    }
+  
+    .faq h2 {
+      font-size: 28px; /* Adjust the font size as per your requirement */
+    }
+  
+    .faq-main {
+      margin: 50px auto; /* Adjust the margin as per your requirement */
+      width: 100%;
+      max-width: 600px; /* Adjust the maximum width as per your requirement */
+    }
+  
+    .faq-main li {
+      list-style: none;
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .faq-main li label {
+      display: flex;
+      align-items: center;
+      padding: 16px; /* Adjust the padding as per your requirement */
+      font-size: 16px; /* Adjust the font size as per your requirement */
+      font-weight: 600;
+      background: #303030;
+      margin-bottom: 1px; /* Adjust the margin as per your requirement */
+      cursor: pointer;
+      position: relative;
+    }
+  
+    .faq-main li label::after {
+      content: "+";
+      position: absolute;
+      right: 16px; /* Adjust the right value as per your requirement */
+      font-size: 24px; /* Adjust the font size as per your requirement */
+      transition: transform 0.3s;
+    }
+  
+    input[type='radio'] {
+      display: none;
+    }
+  
+    .faq-main .content {
+      font-size: 12px; /* Adjust the font size as per your requirement */
+      background: #303030;
+      text-align: left;
+      padding: 0 16px; /* Adjust the padding as per your requirement */
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s, padding 0.5s;
+    }
+  
+    .faq-main input[type='radio']:checked + label + .content {
+      max-height: 500px; /* Adjust the max-height as per your requirement */
+      padding: 24px 16px; /* Adjust the padding as per your requirement */
+    }
+  
+    .faq-main input[type='radio']:checked + label::after {
+      transform: rotate(135deg);
+    }
+  
+    .faq-main label:hover {
+      background-color: #525252;
+      transition: all 0.5s;
+    }
+  
+    .get-started {
+      width: 60%; /* Adjust the width as per your requirement */
+      margin: 0;
+      margin-bottom: 15px; /* Adjust the margin as per your requirement */
+      font-size: 16px; /* Adjust the font size as per your requirement */
+      border: none;
+    }
+  
+    .footer-container {
+      display: flex;
+    }
+  
+    .column {
+      margin-top: 5px; /* Adjust the margin as per your requirement */
+    padding: 10px;
+    }
+
+  }
+  
+
+
+  /*-----------------------------------------------------------*/
+  
  
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 922px) { */
     /* Styles for screens up to 768px */
     
     /* header {
@@ -691,7 +1012,7 @@ footer p
     .items-content p {
       width: 100%;
     } */
-  }
+  /* } */
   
   
 
