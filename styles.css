@@ -343,12 +343,12 @@ input[type="email"]:active
 {
     0%
     {
-        transform: rotate(-60deg);
+        transform: rotate(-40deg);
     }
 
     100%
     {
-        transform: rotate(60deg);
+        transform: rotate(40deg);
     }
 }
 
@@ -725,8 +725,8 @@ input[type='radio']
   /*-----------------------------------------------------------*/
 
 
-  /* Styles for screens between 400px and 922px */
-@media only screen and (min-width: 401px) and (max-width: 922px) {
+  /* Styles for screens between 400px and 960px */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
     header {
       height: 100%; 
     }
@@ -942,8 +942,8 @@ input[type='radio']
 
   /*-----------------------------------------------------------*/
   
-/* -------------Styles for screens between 900px and 1300px------------------- */
-@media only screen and (min-width: 900px) and (max-width: 1300px) {
+/* -------------Styles for screens between 960px and 1300px------------------- */
+@media only screen and (min-width: 960px) and (max-width: 1300px) {
   /* Add your responsive styles here */
 
   header {
@@ -1011,13 +1011,14 @@ input[type='radio']
   }
 
   .items-content h2 {
-    font-size: 30px;
-    padding: 10px;
+    font-size: 40px;
+    padding: 12px;
   }
 
   .items-content p {
     width: 100%;
-    font-size: 12px;
+    font-size: 20px;
+    padding: 15px;
   }
 
   .feature-2 {
